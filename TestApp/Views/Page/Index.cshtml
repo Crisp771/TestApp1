@@ -1,0 +1,37 @@
+﻿@model TestApp.PageService.Page
+
+
+@(Html.Kendo().Grid<TestApp.PageService.Page>()
+        .Name("PageGrid")
+        .Columns(columns =>
+        {
+            columns.Bound(c => c.Title);
+        })
+        .ClientDetailTemplateId("PageTemplate")
+        .Events(e => { e.DetailExpand("PageUI.Expand"); e.DataBound("PageUI.DataBound"); })
+        .HtmlAttributes(new { style = "height: 550px;" })
+        .Scrollable()
+        .Groupable()
+        .Sortable()
+        .Pageable(pageable => pageable
+            .Refresh(true)
+            .PageSizes(true)
+            .ButtonCount(5))
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .Read(read => read.Action("GetPages", "Page"))
+            .PageSize(20)
+        )
+)
+
+<script id="PageTemplate" type="text/kendo-tmpl">
+    <div id="PageContainer_#=PageID#" data-PageID="#=PageID#">
+        @(Html.Kendo().Editor()
+        .Name("Editor_Page_#=PageID#")
+        .HtmlAttributes(new { style = "height:440px" })
+        .Resizable(resizable => resizable.Content(true).Toolbar(true))
+        .Value(@<text>#=PageContent#</text>).ToClientTemplate())
+    </div>
+</script>
+
+<script src="~/Scripts/PageUI.js"></script>

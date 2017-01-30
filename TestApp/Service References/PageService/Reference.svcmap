@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c67d3dfa-0190-4631-a23f-f4d360301cb9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:54933/PageService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PageService.wsdl" MetadataType="Wsdl" ID="3be5ea65-15d3-462c-aff7-eb18c2f9aed8" SourceId="1" SourceUrl="http://localhost:54933/PageService.svc?wsdl" />
+    <MetadataFile FileName="PageService.disco" MetadataType="Disco" ID="b4b16f88-5ea8-436d-bd58-5394d6312d7f" SourceId="1" SourceUrl="http://localhost:54933/PageService.svc?disco" />
+    <MetadataFile FileName="PageService.xsd" MetadataType="Schema" ID="16f7a134-3f16-42a5-b3f8-e9e69619a9cc" SourceId="1" SourceUrl="http://localhost:54933/PageService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PageService1.xsd" MetadataType="Schema" ID="e6c41991-5c5b-4f47-b99f-529dbb5edf64" SourceId="1" SourceUrl="http://localhost:54933/PageService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PageService2.xsd" MetadataType="Schema" ID="1e8eb662-3d0a-448b-bdf7-e035f1223164" SourceId="1" SourceUrl="http://localhost:54933/PageService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
